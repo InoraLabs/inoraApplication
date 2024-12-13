@@ -1,5 +1,6 @@
 // App.jsx
 import React from 'react';
+import Link from 'next/link';
 
 const Profile = () => {
   return (
@@ -20,14 +21,16 @@ const Profile = () => {
         </div>
 
         {/* Dashboard Button */}
-        <button className="bg-black text-white px-4 py-2 rounded-lg">Dashboard</button>
+        <button className="bg-black text-white px-4 py-2 rounded-lg"><Link href="./dashboard">Dashboard</Link></button>
       </div>
       <div>
             {/* User Information Dropdown */}
             <div className="bg-gray-200 rounded-lg shadow-lg mt-4">
             <div className="p-4 flex items-center justify-between">
+            <Link href="/profilequestion">
               <span className="text-gray-800 font-medium">User Information</span>
               <button className="text-gray-800">▼</button>
+              </Link>
             </div>
             </div>
         </div>    
